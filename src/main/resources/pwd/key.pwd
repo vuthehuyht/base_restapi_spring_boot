@@ -1,0 +1,8 @@
+<passwdset>
+    <passwd name="mysql.password" expires="9999-12-31 23:59:59">
+        <word value="1"/>
+    </passwd>
+    <passwd name="token.key" expires="9999-12-31 23:59:59">
+        <word value="12345678"/>
+    </passwd>
+</passwdset>
