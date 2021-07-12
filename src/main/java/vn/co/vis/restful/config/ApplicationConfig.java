@@ -1,7 +1,6 @@
 package vn.co.vis.restful.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -15,7 +14,6 @@ import javax.sql.DataSource;
 
 /**
  * Common configurations
- *
  */
 @Configuration
 @ComponentScan
@@ -47,7 +45,6 @@ public class ApplicationConfig {
      */
     @Bean
     public DataSource dataSource() {
-
         DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
         String passWord = passwordService.getPassword("mysql.password");
         driverManagerDataSource.setDriverClassName(databaseClassName);

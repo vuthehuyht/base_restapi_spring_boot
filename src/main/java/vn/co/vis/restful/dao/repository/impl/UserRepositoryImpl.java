@@ -42,6 +42,6 @@ public class UserRepositoryImpl extends AbstractRepository implements UserReposi
         sql.append("SELECT ").append(attributeNamesForSelect(User.class));
         sql.append(" FROM ").append(getSimpleNameTable(User.class));
         List<User> users = jdbcTemplate.query(sql.toString(), new BeanPropertyRowMapper<>(User.class));
-        return Optional.ofNullable(users);
+        return Optional.of(users);
     }
 }

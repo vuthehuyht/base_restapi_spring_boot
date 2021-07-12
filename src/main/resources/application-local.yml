@@ -1,7 +1,7 @@
-password.directory: E:\api\src\main\resources\pwd
+password.directory: G:\base_restapi_spring_boot\src\main\resources\pwd
 
 database:
-  url: jdbc:mysql://localhost:3307/demo?serverTimezone=JST&useLegacyDatetimeCode=false&zeroDateTimeBehavior=convertToNull&useUnicode=yes&characterEncoding=UTF-8
+  url: jdbc:mysql://localhost:3306/demo?serverTimezone=JST&useLegacyDatetimeCode=false&zeroDateTimeBehavior=convertToNull&useUnicode=yes&characterEncoding=UTF-8
   user: root
   driver.class.name: com.mysql.cj.jdbc.Driver
 
