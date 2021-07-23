@@ -1,0 +1,73 @@
+2021/07/23 16:03:12:095[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "huyvt@fpt.com.vn",
+    "password": "123"
+}
+2021/07/23 16:03:12:096[INFO]  Response={"id":"1","firstName":"Huy","lastName":"Vu The","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyTmFtZSI6Imh1eXZ0QGZwdC5jb20udm4iLCJpYXQiOjE2MjcwMzA5OTIsImV4cCI6MTYyNzExNzM5Mn0.VD1zYTN06t1iQpui9q1vu7D7iNegG5ofdM-W7gvlksg"}
+2021/07/23 16:04:21:399[INFO][logID]  Request http://localhost:9091/api/products
+2021/07/23 16:04:21:400[INFO]  Response={"errorCode":"E0","message":"StatementCallback; bad SQL grammar [SELECT  FROM user]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM user' at line 1"}
+2021/07/23 16:08:54:892[INFO][logID]  Request http://localhost:9091/api/products
+2021/07/23 16:08:54:892[INFO]  Response={"errorCode":"E0","message":"StatementCallback; bad SQL grammar [SELECT  FROM user]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM user' at line 1"}
+2021/07/23 16:09:32:220[INFO][logID]  Request http://localhost:9091/api/products
+2021/07/23 16:09:32:221[INFO]  Response={"errorCode":"E0","message":"StatementCallback; bad SQL grammar [SELECT  FROM user]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM user' at line 1"}
+2021/07/23 16:12:23:619[INFO][logID]  Request http://localhost:9091/api/products
+2021/07/23 16:12:23:619[INFO]  Response={"errorCode":"E0","message":"StatementCallback; bad SQL grammar [SELECT  FROM user]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM user' at line 1"}
+2021/07/23 16:19:03:137[INFO][logID]  Request http://localhost:9091/api/products
+2021/07/23 16:19:03:138[INFO]  Response={"errorCode":"E0","message":"StatementCallback; bad SQL grammar [SELECT  FROM product]; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM product' at line 1"}
+2021/07/23 16:19:57:551[INFO][logID]  Request http://localhost:9091/api/products
+2021/07/23 16:19:57:551[INFO]  Response={"errorCode":"E0","message":"class java.util.ArrayList cannot be cast to class org.springframework.http.ResponseEntity (java.util.ArrayList is in module java.base of loader 'bootstrap'; org.springframework.http.ResponseEntity is in unnamed module of loader 'app')"}
+2021/07/23 16:23:00:731[INFO][logID]  Request http://localhost:9091/api/products
+2021/07/23 16:23:00:731[INFO]  Response={"errorCode":"E0","message":"class java.util.ArrayList cannot be cast to class org.springframework.http.ResponseEntity (java.util.ArrayList is in module java.base of loader 'bootstrap'; org.springframework.http.ResponseEntity is in unnamed module of loader 'app')"}
+2021/07/23 16:23:47:166[INFO][logID]  Request http://localhost:9091/api/products
+2021/07/23 16:23:47:166[INFO]  Response={"errorCode":"E0","message":"class java.util.ArrayList cannot be cast to class org.springframework.http.ResponseEntity (java.util.ArrayList is in module java.base of loader 'bootstrap'; org.springframework.http.ResponseEntity is in unnamed module of loader 'app')"}
+2021/07/23 16:25:38:360[INFO][logID]  Request http://localhost:9091/api/products
+2021/07/23 16:25:38:366[INFO]  Response=[{"id":1,"name":"Laptop Dell","quantity":12,"username":"huyvt"},{"id":2,"name":"Dien thoai","quantity":5,"username":"vutv"}]
+2021/07/23 16:30:53:709[INFO][logID]  Request http://localhost:9091/api/products/2
+2021/07/23 16:30:53:710[INFO]  Response={"errorCode":"E0","message":"class java.util.ArrayList cannot be cast to class vn.co.vis.restful.dao.entity.Product (java.util.ArrayList is in module java.base of loader 'bootstrap'; vn.co.vis.restful.dao.entity.Product is in unnamed module of loader 'app')"}
+2021/07/23 16:32:18:861[INFO][logID]  Request http://localhost:9091/api/products/2
+2021/07/23 16:32:18:862[INFO]  Response={"errorCode":"E0","message":"class java.util.ArrayList cannot be cast to class vn.co.vis.restful.dao.entity.Product (java.util.ArrayList is in module java.base of loader 'bootstrap'; vn.co.vis.restful.dao.entity.Product is in unnamed module of loader 'app')"}
+2021/07/23 16:33:12:802[INFO][logID]  Request http://localhost:9091/api/products/2
+2021/07/23 16:33:12:809[INFO]  Response={"id":2,"name":"Dien thoai","quantity":5,"username":"vutv"}
+2021/07/23 16:43:25:531[INFO][logID]  Request http://localhost:9091/api/error
+2021/07/23 16:43:25:532[INFO]  Response={"timestamp":"2021-07-23T09:43:25.500+00:00","status":500,"error":"Internal Server Error","message":"","path":"/api/products/huyvt"}
+2021/07/23 16:44:23:058[INFO][logID]  Request http://localhost:9091/api/error
+2021/07/23 16:44:23:058[INFO]  Response={"timestamp":"2021-07-23T09:44:23.029+00:00","status":500,"error":"Internal Server Error","message":"","path":"/api/products/huyvt"}
+2021/07/23 16:49:15:475[INFO][logID]  Request http://localhost:9091/api/error
+2021/07/23 16:49:15:476[INFO]  Response={"timestamp":"2021-07-23T09:49:15.445+00:00","status":500,"error":"Internal Server Error","message":"","path":"/api/products/huyvt"}
+2021/07/23 16:49:51:954[INFO][logID]  Request http://localhost:9091/api/error
+2021/07/23 16:49:51:955[INFO]  Response={"timestamp":"2021-07-23T09:49:51.954+00:00","status":500,"error":"Internal Server Error","message":"","path":"/api/products/huyvt"}
+2021/07/23 16:49:53:583[INFO][logID]  Request http://localhost:9091/api/error
+2021/07/23 16:49:53:583[INFO]  Response={"timestamp":"2021-07-23T09:49:53.582+00:00","status":500,"error":"Internal Server Error","message":"","path":"/api/products/huyvt"}
+2021/07/23 16:50:17:249[INFO][logID]  Request http://localhost:9091/api/error
+2021/07/23 16:50:17:250[INFO]  Response={"timestamp":"2021-07-23T09:50:17.249+00:00","status":500,"error":"Internal Server Error","message":"","path":"/api/products/1"}
+2021/07/23 16:50:40:234[INFO][logID]  Request http://localhost:9091/api/products/1
+2021/07/23 16:50:40:240[INFO]  Response={"id":1,"name":"Laptop Dell","quantity":12,"username":"huyvt"}
+2021/07/23 16:51:11:916[INFO][logID]  Request http://localhost:9091/api/products/1
+2021/07/23 16:51:11:922[INFO]  Response=[]
+2021/07/23 16:51:29:187[INFO][logID]  Request http://localhost:9091/api/products/huyvt
+2021/07/23 16:51:29:188[INFO]  Response=[{"id":1,"name":"Laptop Dell","quantity":12,"username":"huyvt"}]
+2021/07/23 17:01:03:353[INFO][logID]  Request http://localhost:9091/api/products/add Payload={
+    "name": "Ban gaming",
+    "quantity": 10,
+    "username": "hadh"
+}
+2021/07/23 17:01:03:359[INFO]  Response={"id":1,"name":"Laptop Dell","quantity":12,"username":"huyvt"}
+2021/07/23 17:02:09:880[INFO][logID]  Request http://localhost:9091/api/products/add Payload={
+    "name": "Ghe gaming",
+    "quantity": 2,
+    "username": "hadh"
+}
+2021/07/23 17:02:09:881[INFO]  Response={"id":1,"name":"Laptop Dell","quantity":12,"username":"huyvt"}
+2021/07/23 17:32:07:313[INFO][logID]  Request http://localhost:9091/api/products/3 Payload={
+    "name": "Ban gaming chu Z",
+    "quantity": 2,
+    "username": "hadh"
+}
+2021/07/23 17:32:07:314[INFO]  Response={"errorCode":"E0","message":"PreparedStatementCallback; bad SQL grammar [update product set name=?, quantity=?, username=? where id=?]; nested exception is java.sql.SQLException: No value specified for parameter 4"}
+2021/07/23 17:33:09:721[INFO][logID]  Request http://localhost:9091/api/products/3 Payload={
+    "name": "Ban gaming chu Z",
+    "quantity": 2,
+    "username": "hadh"
+}
+2021/07/23 17:33:09:727[INFO]  Response={"statusCode":"SUCCESS","message":"Updated"}
+2021/07/23 17:33:49:120[INFO][logID]  Request http://localhost:9091/api/products/4
+2021/07/23 17:33:49:121[INFO]  Response={"statusCode":"SUCCESS","message":"Deleted"}

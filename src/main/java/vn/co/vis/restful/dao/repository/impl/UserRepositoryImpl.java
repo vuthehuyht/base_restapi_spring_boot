@@ -15,13 +15,12 @@ import java.util.Optional;
  */
 @Repository
 public class UserRepositoryImpl extends AbstractRepository implements UserRepository {
-
     @Override
     public Optional<User> findById(String id) {
         StringBuilder sql = new StringBuilder();
         sql.append("SELECT ").append(attributeNamesForSelect(User.class));
         sql.append(" FROM ").append(getSimpleNameTable(User.class));
-        sql.append(" WHERE id = ?");
+        sql.append(" WHERE email = ?");
         User user = jdbcTemplate.queryForObject(sql.toString(), new String[]{id}, new BeanPropertyRowMapper<>(User.class));
         return Optional.ofNullable(user);
     }
@@ -31,7 +30,7 @@ public class UserRepositoryImpl extends AbstractRepository implements UserReposi
         StringBuilder sql = new StringBuilder();
         sql.append("SELECT ").append(attributeNamesForSelect(User.class));
         sql.append(" FROM ").append(getSimpleNameTable(User.class));
-        sql.append(" WHERE id = ? and password = ?");
+        sql.append(" WHERE email = ? and password = ?");
         User user = jdbcTemplate.queryForObject(sql.toString(), new String[]{id, password}, new BeanPropertyRowMapper<>(User.class));
         return Optional.ofNullable(user);
     }
