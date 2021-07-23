@@ -10,7 +10,7 @@ import javax.validation.constraints.NotBlank;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class NewProductRequest {
+public class ProductRequest {
     @NotBlank
     private String name;
     @Min(value = 1)

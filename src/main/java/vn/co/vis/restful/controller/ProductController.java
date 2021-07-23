@@ -2,7 +2,7 @@ package vn.co.vis.restful.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import vn.co.vis.restful.dto.request.NewProductRequest;
+import vn.co.vis.restful.dto.request.ProductRequest;
 import vn.co.vis.restful.service.ProductService;
 
 import javax.validation.Valid;
@@ -25,12 +25,12 @@ public class ProductController extends AbstractController<ProductService> {
     }
 
     @PostMapping(value = "/products/add")
-    public ResponseEntity<?> createProduct(@Valid @RequestBody NewProductRequest request) {
+    public ResponseEntity<?> createProduct(@Valid @RequestBody ProductRequest request) {
         return response(service.createProduct(request));
     }
 
     @PutMapping(value = "/products/{productId}")
-    public ResponseEntity<?> createProduct(@Valid @RequestBody NewProductRequest request, @PathVariable int productId) {
+    public ResponseEntity<?> createProduct(@Valid @RequestBody ProductRequest request, @PathVariable int productId) {
         return response(service.updateProduct(request, productId));
     }
 

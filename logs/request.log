@@ -71,3 +71,21 @@
 2021/07/23 17:33:09:727[INFO]  Response={"statusCode":"SUCCESS","message":"Updated"}
 2021/07/23 17:33:49:120[INFO][logID]  Request http://localhost:9091/api/products/4
 2021/07/23 17:33:49:121[INFO]  Response={"statusCode":"SUCCESS","message":"Deleted"}
+2021/07/23 17:36:03:020[INFO][logID]  Request http://localhost:9091/api/products/add Payload={
+    "name": "Quat cong nghiep",
+    "quantity": 0,
+    "username": ""
+}
+2021/07/23 17:36:03:026[INFO]  Response=[unknown]
+2021/07/23 17:36:29:233[INFO][logID]  Request http://localhost:9091/api/products/add Payload={
+    "name": "Quat cong nghiep",
+    "quantity": 2,
+    "username": ""
+}
+2021/07/23 17:36:29:234[INFO]  Response=[unknown]
+2021/07/23 17:36:42:955[INFO][logID]  Request http://localhost:9091/api/products/add Payload={
+    "name": "Quat cong nghiep",
+    "quantity": 2,
+    "username": "thinhvv"
+}
+2021/07/23 17:36:42:956[INFO]  Response={"statusCode":"SUCCESS","message":"Created"}

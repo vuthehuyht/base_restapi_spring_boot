@@ -1,7 +1,7 @@
 package vn.co.vis.restful.dao.repository;
 
 import vn.co.vis.restful.dao.entity.Product;
-import vn.co.vis.restful.dto.request.NewProductRequest;
+import vn.co.vis.restful.dto.request.ProductRequest;
 import vn.co.vis.restful.dto.response.StatusResponse;
 
 import java.util.List;
@@ -11,7 +11,7 @@ public interface ProductRepository {
     Optional<List<Product>> getAllProducts();
     Optional<Product> getProduct(int id);
     Optional<List<Product>> getProductsByUsername(String username);
-    Optional<StatusResponse> create(NewProductRequest product);
-    Optional<StatusResponse> update(int id, NewProductRequest request);
+    Optional<StatusResponse> create(ProductRequest product);
+    Optional<StatusResponse> update(int id, ProductRequest request);
     Optional<StatusResponse> deleteById(int id);
 }

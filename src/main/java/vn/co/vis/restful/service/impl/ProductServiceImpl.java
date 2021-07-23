@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import vn.co.vis.restful.dao.entity.Product;
 import vn.co.vis.restful.dao.repository.ProductRepository;
-import vn.co.vis.restful.dto.request.NewProductRequest;
+import vn.co.vis.restful.dto.request.ProductRequest;
 import vn.co.vis.restful.dto.response.StatusResponse;
 import vn.co.vis.restful.service.AbstractService;
 import vn.co.vis.restful.service.ProductService;
@@ -33,12 +33,12 @@ public class ProductServiceImpl extends AbstractService implements ProductServic
     }
 
     @Override
-    public Optional<StatusResponse> createProduct(NewProductRequest product) {
+    public Optional<StatusResponse> createProduct(ProductRequest product) {
         return productRepository.create(product);
     }
 
     @Override
-    public Optional<StatusResponse> updateProduct(NewProductRequest product, int id) {
+    public Optional<StatusResponse> updateProduct(ProductRequest product, int id) {
         return productRepository.update(id, product);
     }
 

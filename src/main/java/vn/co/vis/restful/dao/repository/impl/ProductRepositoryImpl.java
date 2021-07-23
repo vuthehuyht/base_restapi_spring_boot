@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 import vn.co.vis.restful.dao.entity.Product;
 import vn.co.vis.restful.dao.repository.AbstractRepository;
 import vn.co.vis.restful.dao.repository.ProductRepository;
-import vn.co.vis.restful.dto.request.NewProductRequest;
+import vn.co.vis.restful.dto.request.ProductRequest;
 import vn.co.vis.restful.dto.response.StatusResponse;
 
 import java.util.List;
@@ -43,7 +43,7 @@ public class ProductRepositoryImpl extends AbstractRepository implements Product
     }
 
     @Override
-    public Optional<StatusResponse> create(NewProductRequest product) {
+    public Optional<StatusResponse> create(ProductRequest product) {
         String sql = "insert into product(name,quantity, username) values (?,?,?)";
         int status = jdbcTemplate.update(sql, product.getName(), product.getQuantity(), product.getUsername());
         if (status == 1) {
@@ -53,7 +53,7 @@ public class ProductRepositoryImpl extends AbstractRepository implements Product
     }
 
     @Override
-    public Optional<StatusResponse> update(int id, NewProductRequest request) {
+    public Optional<StatusResponse> update(int id, ProductRequest request) {
         String sql = "update " + getSimpleNameTable(Product.class) + " set name=?, quantity=?, username=? where id=?";
         int status = jdbcTemplate.update(sql, request.getName(), request.getQuantity(), request.getUsername(), id);
         if (status == 1) {
