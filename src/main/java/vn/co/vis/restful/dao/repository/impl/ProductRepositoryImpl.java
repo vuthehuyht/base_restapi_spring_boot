@@ -33,12 +33,12 @@ public class ProductRepositoryImpl extends AbstractRepository implements Product
     }
 
     @Override
-    public Optional<List<Product>> getProductsByUsername(String username) {
+    public Optional<List<Product>> getProductsByUserId(int id) {
         StringBuilder sql = new StringBuilder();
         sql.append("SELECT ").append(attributeNamesForSelect(Product.class));
         sql.append(" FROM ").append(getSimpleNameTable(Product.class));
         sql.append(" WHERE username = ?");
-        List<Product> products = jdbcTemplate.query(sql.toString(), new String[]{username}, new BeanPropertyRowMapper<>(Product.class));
+        List<Product> products = jdbcTemplate.query(sql.toString(), new Integer[]{id}, new BeanPropertyRowMapper<>(Product.class));
         return Optional.of(products);
     }
 

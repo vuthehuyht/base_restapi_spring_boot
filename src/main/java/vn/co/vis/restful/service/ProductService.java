@@ -10,7 +10,7 @@ import java.util.Optional;
 public interface ProductService {
     Optional<List<Product>> getAllProducts();
     Optional<Product> getProductById(int id);
-    Optional<List<Product>> getProductByUsername(String username);
+    Optional<List<Product>> getProductByUsername(int id);
     Optional<StatusResponse> createProduct(ProductRequest product);
     Optional<StatusResponse> updateProduct(ProductRequest product, int id);
     Optional<StatusResponse> deleteProduct(int id);

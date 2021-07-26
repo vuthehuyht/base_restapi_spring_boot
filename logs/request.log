@@ -89,3 +89,87 @@
     "username": "thinhvv"
 }
 2021/07/23 17:36:42:956[INFO]  Response={"statusCode":"SUCCESS","message":"Created"}
+2021/07/26 08:45:14:903[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "huyvt@fpt.com.vn",
+    "password": "123"
+}
+2021/07/26 08:45:14:923[INFO]  Response={"id":"1","firstName":"Huy","lastName":"Vu The","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyTmFtZSI6Imh1eXZ0QGZwdC5jb20udm4iLCJpYXQiOjE2MjcyNjM5MTQsImV4cCI6MTYyNzM1MDMxNH0.Jee4rWgkW2r8NsiQJTh4Sz5MGvHOn3r8VaO9ncQsbiY"}
+2021/07/26 08:46:29:026[INFO][logID]  Request http://localhost:9091/api/products/add Payload={
+    "name": "Quat cong nghiep",
+    "quantity": 0,
+    "username": "thinhvv"
+}
+2021/07/26 08:46:29:026[INFO]  Response={"errorCode":"E05","message":"Check request again!"}
+2021/07/26 09:17:03:888[INFO][logID]  Request http://localhost:9091/api/1/products
+2021/07/26 09:17:03:894[INFO]  Response=[{"id":1,"name":"Laptop Dell","quantity":12,"username":"huyvt"}]
+2021/07/26 09:39:08:527[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "huyvt@fpt.com.vn",
+    "password": "123"
+}
+2021/07/26 09:39:08:528[INFO]  Response={"id":"1","firstName":"Huy","lastName":"Vu The","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyTmFtZSI6Imh1eXZ0QGZwdC5jb20udm4iLCJpYXQiOjE2MjcyNjcxNDgsImV4cCI6MTYyNzM1MzU0OH0.zSiwW53OFuk-l3TSRyIZEYYPUDYgFnK-UTCr6Qd9Dpk"}
+2021/07/26 09:41:30:477[INFO][logID]  Request http://localhost:9091/api/login Payload={"username":"hadh@gmail.com","password":"123"}
+2021/07/26 09:41:30:478[INFO]  Response={"errorCode":"E11","message":"userName{validate.required}"}
+2021/07/26 09:43:06:009[INFO][logID]  Request http://localhost:9091/api/login Payload={"userName":"hadh@gmail.com","password":"123"}
+2021/07/26 09:43:06:009[INFO]  Response={"id":"2","firstName":"Ha","lastName":"Dao Hong","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyTmFtZSI6ImhhZGhAZ21haWwuY29tIiwiaWF0IjoxNjI3MjY3Mzg2LCJleHAiOjE2MjczNTM3ODZ9.VgiYXlVaREkCwd5pksJ0ZzeT7Lz0MEFW0Lv9ZPayhxA"}
+2021/07/26 09:43:17:359[INFO][logID]  Request http://localhost:9091/api/users/hadh@gmail.com
+2021/07/26 09:43:17:359[INFO]  Response={"id":"2","firstName":"Ha","lastName":"Dao Hong","email":"hadh@gmail.com","phone":"013246545678"}
+2021/07/26 09:48:26:161[INFO][logID]  Request http://localhost:9091/api/users/hadh@gmail.com
+2021/07/26 09:48:26:161[INFO]  Response={"id":"2","firstName":"Ha","lastName":"Dao Hong","email":"hadh@gmail.com","phone":"013246545678"}
+2021/07/26 09:49:01:439[INFO][logID]  Request http://localhost:9091/api/users/hadh@gmail.com
+2021/07/26 09:49:01:440[INFO]  Response={"id":"2","firstName":"Ha","lastName":"Dao Hong","email":"hadh@gmail.com","phone":"013246545678"}
+2021/07/26 09:50:43:245[INFO][logID]  Request http://localhost:9091/api/users/hadh@gmail.com
+2021/07/26 09:50:43:245[INFO]  Response={"id":"2","firstName":"Ha","lastName":"Dao Hong","email":"hadh@gmail.com","phone":"013246545678"}
+2021/07/26 09:51:25:748[INFO][logID]  Request http://localhost:9091/api/users/hadh@gmail.com
+2021/07/26 09:51:25:749[INFO]  Response={"id":"2","firstName":"Ha","lastName":"Dao Hong","email":"hadh@gmail.com","phone":"013246545678"}
+2021/07/26 09:53:57:452[INFO][logID]  Request http://localhost:9091/api/users/hadh@gmail.com
+2021/07/26 09:53:57:452[INFO]  Response={"id":"2","firstName":"Ha","lastName":"Dao Hong","email":"hadh@gmail.com","phone":"013246545678"}
+2021/07/26 09:54:06:966[INFO][logID]  Request http://localhost:9091/api/2/products
+2021/07/26 09:54:06:966[INFO]  Response=[{"id":2,"name":"Dien thoai","quantity":5,"username":"vutv"}]
+2021/07/26 09:55:10:408[INFO][logID]  Request http://localhost:9091/api/users/hadh@gmail.com
+2021/07/26 09:55:10:408[INFO]  Response={"id":"2","firstName":"Ha","lastName":"Dao Hong","email":"hadh@gmail.com","phone":"013246545678"}
+2021/07/26 09:55:13:628[INFO][logID]  Request http://localhost:9091/api/2/products
+2021/07/26 09:55:13:628[INFO]  Response=[{"id":2,"name":"Dien thoai","quantity":5,"username":"vutv"}]
+2021/07/26 09:57:49:227[INFO][logID]  Request http://localhost:9091/api/2/products
+2021/07/26 09:57:49:227[INFO]  Response=[{"id":2,"name":"Dien thoai","quantity":5,"username":"vutv"}]
+2021/07/26 10:00:52:515[INFO][logID]  Request http://localhost:9091/api/2/products
+2021/07/26 10:00:52:515[INFO]  Response=[{"id":2,"name":"Dien thoai","quantity":5,"username":"vutv"}]
+2021/07/26 10:01:29:118[INFO][logID]  Request http://localhost:9091/api/2/products
+2021/07/26 10:01:29:118[INFO]  Response=[{"id":2,"name":"Dien thoai","quantity":5,"username":"vutv"}]
+2021/07/26 10:02:08:124[INFO][logID]  Request http://localhost:9091/api/2/products
+2021/07/26 10:02:08:124[INFO]  Response=[{"id":2,"name":"Dien thoai","quantity":5,"username":"vutv"}]
+2021/07/26 10:02:31:403[INFO][logID]  Request http://localhost:9091/api/2/products
+2021/07/26 10:02:31:404[INFO]  Response=[{"id":2,"name":"Dien thoai","quantity":5,"username":"vutv"}]
+2021/07/26 10:02:54:402[INFO][logID]  Request http://localhost:9091/api/2/products
+2021/07/26 10:02:54:403[INFO]  Response=[{"id":2,"name":"Dien thoai","quantity":5,"username":"vutv"}]
+2021/07/26 10:05:20:582[INFO][logID]  Request http://localhost:9091/api/2/products
+2021/07/26 10:05:20:582[INFO]  Response=[{"id":2,"name":"Dien thoai","quantity":5,"username":"vutv"}]
+2021/07/26 10:05:54:370[INFO][logID]  Request http://localhost:9091/api/2/products
+2021/07/26 10:05:54:371[INFO]  Response=[{"id":2,"name":"Dien thoai","quantity":5,"username":"vutv"}]
+2021/07/26 10:06:31:731[INFO][logID]  Request http://localhost:9091/api/2/products
+2021/07/26 10:06:31:731[INFO]  Response=[{"id":2,"name":"Dien thoai","quantity":5,"username":"vutv"}]
+2021/07/26 10:11:29:102[INFO][logID]  Request http://localhost:9091/api/2/products
+2021/07/26 10:11:29:102[INFO]  Response=[{"id":2,"name":"Dien thoai","quantity":5,"username":"vutv"}]
+2021/07/26 11:02:16:997[INFO][logID]  Request http://localhost:9091/api/login Payload={"userName":"hadh@gmail.com","password":"123"}
+2021/07/26 11:02:16:997[INFO]  Response={"id":"2","firstName":"Ha","lastName":"Dao Hong","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyTmFtZSI6ImhhZGhAZ21haWwuY29tIiwiaWF0IjoxNjI3MjcyMTM2LCJleHAiOjE2MjczNTg1MzZ9.0T3teDr5U7MZb6iB1Vq1X1wFmh8-yHJSP5wjasCmxJA"}
+2021/07/26 11:02:17:048[INFO][logID]  Request http://localhost:9091/api/users/hadh@gmail.com
+2021/07/26 11:02:17:048[INFO]  Response={"id":"2","firstName":"Ha","lastName":"Dao Hong","email":"hadh@gmail.com","phone":"013246545678"}
+2021/07/26 11:34:36:396[INFO][logID]  Request http://localhost:9091/api/users/hadh@gmail.com
+2021/07/26 11:34:36:396[INFO]  Response={"id":"2","firstName":"Ha","lastName":"Dao Hong","email":"hadh@gmail.com","phone":"013246545678"}
+2021/07/26 11:34:39:697[INFO][logID]  Request http://localhost:9091/api/2/products
+2021/07/26 11:34:39:697[INFO]  Response=[{"id":2,"name":"Dien thoai","quantity":5,"username":"vutv"}]
+2021/07/26 11:35:48:374[INFO][logID]  Request http://localhost:9091/api/products/add Payload={"name":"Loa","quantity":10,"username":null}
+2021/07/26 11:35:48:374[INFO]  Response={"errorCode":"E05","message":"Check request again!"}
+2021/07/26 11:38:32:026[INFO][logID]  Request http://localhost:9091/api/products/add Payload={"name":"Loa","quantity":10,"username":null}
+2021/07/26 11:38:32:027[INFO]  Response={"errorCode":"E05","message":"Check request again!"}
+2021/07/26 11:40:35:716[INFO][logID]  Request http://localhost:9091/api/products/add Payload={"name":"Loa","quantity":12,"username":""}
+2021/07/26 11:40:35:716[INFO]  Response={"errorCode":"E05","message":"Check request again!"}
+2021/07/26 11:41:11:837[INFO][logID]  Request http://localhost:9091/api/products/add Payload={"name":"Loa","quantity":12,"username":"2"}
+2021/07/26 11:41:11:837[INFO]  Response={"statusCode":"SUCCESS","message":"Created"}
+2021/07/26 11:44:08:839[INFO][logID]  Request http://localhost:9091/api/login Payload={"userName":"hadh@gmail.com","password":"123"}
+2021/07/26 11:44:08:839[INFO]  Response={"id":"2","firstName":"Ha","lastName":"Dao Hong","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyTmFtZSI6ImhhZGhAZ21haWwuY29tIiwiaWF0IjoxNjI3Mjc0NjQ4LCJleHAiOjE2MjczNjEwNDh9.O3df5fTpLkptr7fAyYtJAx4s1do_6hHz8njs81c8P04"}
+2021/07/26 11:44:34:145[INFO][logID]  Request http://localhost:9091/api/users/hadh@gmail.com
+2021/07/26 11:44:34:145[INFO]  Response={"id":"2","firstName":"Ha","lastName":"Dao Hong","email":"hadh@gmail.com","phone":"013246545678"}
+2021/07/26 11:44:42:409[INFO][logID]  Request http://localhost:9091/api/2/products
+2021/07/26 11:44:42:409[INFO]  Response=[{"id":2,"name":"Dien thoai","quantity":5,"username":"vutv"}]
+2021/07/26 11:46:59:503[INFO][logID]  Request http://localhost:9091/api/products/add Payload={"name":"Quat","quantity":12,"username":"2"}
+2021/07/26 11:46:59:504[INFO]  Response={"statusCode":"SUCCESS","message":"Created"}

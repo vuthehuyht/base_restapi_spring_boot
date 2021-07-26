@@ -12,3 +12,7 @@
 2021/07/23 16:30:53:671[ERROR] class java.util.ArrayList cannot be cast to class vn.co.vis.restful.dao.entity.Product (java.util.ArrayList is in module java.base of loader 'bootstrap'; vn.co.vis.restful.dao.entity.Product is in unnamed module of loader 'app')
 2021/07/23 16:32:18:819[ERROR] class java.util.ArrayList cannot be cast to class vn.co.vis.restful.dao.entity.Product (java.util.ArrayList is in module java.base of loader 'bootstrap'; vn.co.vis.restful.dao.entity.Product is in unnamed module of loader 'app')
 2021/07/23 17:32:07:256[ERROR] PreparedStatementCallback; bad SQL grammar [update product set name=?, quantity=?, username=? where id=?]; nested exception is java.sql.SQLException: No value specified for parameter 4
+2021/07/26 08:46:08:937[ERROR] Can't verify token: Bearer "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyTmFtZSI6Imh1eXZ0QGZwdC5jb20udm4iLCJpYXQiOjE2MjcyNjM5MTQsImV4cCI6MTYyNzM1MDMxNH0.Jee4rWgkW2r8NsiQJTh4Sz5MGvHOn3r8VaO9ncQsbiY
+2021/07/26 09:35:08:318[ERROR] token is empty!
+2021/07/26 09:39:00:525[ERROR] token is empty!
+2021/07/26 09:41:30:473[ERROR] userName{validate.required}

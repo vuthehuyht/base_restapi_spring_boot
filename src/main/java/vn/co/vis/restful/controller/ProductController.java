@@ -19,9 +19,9 @@ public class ProductController extends AbstractController<ProductService> {
         return response(service.getProductById(productId));
     }
 
-    @GetMapping(value = "/{username}/products")
-    public ResponseEntity<?> getProductByUsername(@PathVariable String username) {
-        return response(service.getProductByUsername(username));
+    @GetMapping(value = "/{userId}/products")
+    public ResponseEntity<?> getProductByUsername(@PathVariable int userId) {
+        return response(service.getProductByUsername(userId));
     }
 
     @PostMapping(value = "/products/add")

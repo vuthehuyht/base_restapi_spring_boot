@@ -28,8 +28,8 @@ public class ProductServiceImpl extends AbstractService implements ProductServic
     }
 
     @Override
-    public Optional<List<Product>> getProductByUsername(String username) {
-        return productRepository.getProductsByUsername(username);
+    public Optional<List<Product>> getProductByUsername(int id) {
+        return productRepository.getProductsByUserId(id);
     }
 
     @Override
